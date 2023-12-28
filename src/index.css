@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif, ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial,
+      "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    color: #171717;
+  }
+}
+
+:root {
+  --neutral-900: #171717;
+  --light: #fafafa;
+  --teal-950: #042f2e;
+  --teal-900: #134e4a;
+  --teal-800: #115e59;
+  --amber-950: #451a03;
+  --amber-800: #92400e;
+  --bg-green: #89a28f;
+  --bg-red: #dc806b;
+  --bg-yellow: #eb9f63;
+  --bg-light: #d5d6d1;
+  --bg-grape: #c27273;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  max-width: 100dvw;
+  width: fit-content;
+  min-height: 100dvh;
+  height: 100%;
+  overflow-x: hidden;
+  /* background: url("bg.jpg"); */
+  background: linear-gradient(
+    to bottom right,
+    #00ffdd58,
+    #49ffe758,
+    #fe544158,
+    #ff190058
+  );
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  background: linear-gradient(
+    to bottom right,
+    #00ffdd,
+    #49ffe7,
+    #fe5441,
+    #ff1900
+  );
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-image {
+  position: absolute;
+  z-index: -20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.3;
+}
+
+.pattern {
+  position: absolute;
+  z-index: -20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("bg-pattern.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.2;
+}
+
+.rotate {
+  -webkit-animation: spin 15s linear infinite;
+  -moz-animation: spin 15s linear infinite;
+  animation: spin 15s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.text-vertical {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
