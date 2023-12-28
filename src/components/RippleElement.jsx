@@ -16,9 +16,9 @@ function RippleElement({
     //   )}px] h-[${size.at(1)}px]`}
     // ></div>
     <div
-      className={`left-[${position.at(0)}] top-[${position.at(1)}] h-[length:${
+      className={`left-[${position.at(0)}] top-[${position.at(1)}] h-[${
         size[0]
-      }px] w-[length:${size[1]}px] ${styles[shape]}    ${styles[shade]}`}
+      }px] w-[${size[1]}px] ${styles[shape]} ${styles[shade]}`}
     ></div>
   );
 }
