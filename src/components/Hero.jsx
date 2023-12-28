@@ -16,7 +16,7 @@ function Hero() {
         </div>
         <div className="top-[32rem] absolute flex items-center justify-center">
           <a
-            href="./FARZANA RESUME 2023.pdf"
+            href="./Resume of FARZANA 2024.pdf"
             download
             className="cursor-pointer text-[13px] font-[500] underline underline-offset-4"
           >
