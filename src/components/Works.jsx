@@ -18,7 +18,7 @@ function Works() {
           </div>
           <div className="flex justify-end">
             <Link to="/projects">
-              <RoundButton>View all projects</RoundButton>
+              <RoundButton color="dark">View all projects</RoundButton>
             </Link>
           </div>
         </div>

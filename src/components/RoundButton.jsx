@@ -1,6 +1,14 @@
-function RoundButton({ children }) {
+const buttonVariants = {
+  orange:
+    "bg-[#FF914D] hover:ring-2 hover:ring-[#FF914D] hover:ring-offset-2 hover:ring-offset-neutral-900 text-neutral-900",
+  dark: "bg-neutral-900 hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 hover:ring-offset-neutral-100 text-neutral-100",
+};
+
+function RoundButton({ children, color }) {
   return (
-    <button className="hover:scale-105 transition-all duration-300 h-20 w-20 sm:h-24 sm:w-24 border-none rounded-full bg-neutral-900 text-white font-[500] sm:text-xs text-[10.8px]">
+    <button
+      className={`${buttonVariants[color]} text-center transition-all duration-500 h-24 w-24 border-none rounded-full font-[700] text-xs`}
+    >
       {children}
     </button>
   );

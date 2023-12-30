@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -101,7 +102,8 @@ body {
 }
 
 .title {
-  font-family: "Ultra", serif;
+  /* font-family: "Ultra", serif; */
+  font-family: "Exo 2", sans-serif;
 }
 
 .pattern {

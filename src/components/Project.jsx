@@ -3,17 +3,17 @@ import { PiGithubLogo } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import Tooltip from "./Tooltip";
 
+const colorVariants = {
+  peach: "bg-peachy border-peachy before:bg-peachy",
+  green: "bg-greeny border-greeny before:bg-greeny",
+  grape: "bg-grapey border-grapey before:bg-grapey",
+  orange: "bg-orangey border-orangey before:bg-orangey",
+  teal: "bg-teal-300 before:bg-teal-300 border-teal-300 text-neutral-100",
+  dark: "bg-fuchsia-600 before:bg-fuchsia-600 border-fuchsia-600",
+};
+
 function Project({ project }) {
   const { title, skills, shade, image, video, gitLink, liveLink } = project;
-  const colorVariants = {
-    peach: "bg-peachy border-peachy before:bg-peachy",
-    green: "bg-greeny border-greeny before:bg-greeny",
-    grape: "bg-grapey border-grapey before:bg-grapey",
-    orange: "bg-orangey border-orangey before:bg-orangey",
-    teal: "bg-teal-300 before:bg-teal-300 border-teal-300 text-neutral-100",
-    dark: "bg-fuchsia-600 before:bg-fuchsia-600 border-fuchsia-600",
-  };
-
   return (
     <div
       className={`h-fit relative p-3 pb-14 w-full mb-2 before:absolute before:h-full before:left-0 before:right-full before:top-0 before:bottom-0 before:${colorVariants[shade]} before:z-[-1] z-0 before:translate-all before:duration-1000 hover:before:right-0`}
