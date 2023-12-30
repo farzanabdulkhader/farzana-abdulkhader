@@ -20,7 +20,7 @@ const skillTextStyle = "sm:text-[12px] text-[10px] font-[600]";
 
 function Skills() {
   return (
-    <section className="md:px-36 lg:px-40 sm:px-24 px-8 py-12 h-fit flex items-center justify-center lg:mb-8">
+    <section className="md:px-36 lg:px-40 sm:px-24 px-4 py-12 h-fit flex items-center justify-center lg:mb-8">
       <div className="skills border-2 border-neutral-900 relative w-full h-full bg-neutral-300/30 py-12 px-6 md:px-12">
         <h1 className="text-xl underline underline-offset-4 text-neutral-900 font-[700] uppercase tracking-wider mb-8">
           My Toolkit

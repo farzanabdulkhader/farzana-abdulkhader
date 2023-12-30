@@ -10,6 +10,8 @@ function Project({ project }) {
     green: "bg-greeny border-greeny before:bg-greeny",
     grape: "bg-grapey border-grapey before:bg-grapey",
     orange: "bg-orangey border-orangey before:bg-orangey",
+    teal: "bg-teal-300 before:bg-teal-300 border-teal-300 text-neutral-100",
+    dark: "bg-fuchsia-600 before:bg-fuchsia-600 border-fuchsia-600",
   };
 
   return (
@@ -40,7 +42,7 @@ function Project({ project }) {
         className={`${colorVariants[shade]} flex space-x-2 text-xl absolute top-14`}
       >
         <Tooltip text="Open live site">
-          <span className="p-1 hover:scale-110 transition ease-in-out duration-300">
+          <span className="p-1 text-neutral-100 hover:scale-110 transition ease-in-out duration-300">
             {liveLink && (
               <Link to={liveLink} target="_blank">
                 <GoLinkExternal />
@@ -49,16 +51,16 @@ function Project({ project }) {
           </span>
         </Tooltip>
         <Tooltip text="View code">
-          <span className="p-1 hover:scale-110 transition ease-in-out duration-300">
+          <span className="p-1  text-neutral-100 hover:scale-110 transition ease-in-out duration-300">
             <Link to={gitLink} target="_blank">
               <PiGithubLogo />
             </Link>
           </span>
         </Tooltip>
       </div>
-      <div className="text-right absolute text-neutral-900 -right-1 bottom-0 p-4">
+      <div className="text-right absolute text-neutral-100 -right-1 bottom-0 p-4">
         <h1
-          className={`${colorVariants[shade]}  cursor-pointer  font-[600] text-lg p-2  rounded-sm`}
+          className={`${colorVariants[shade]} cursor-pointer font-[600] text-lg p-2 rounded-sm`}
         >
           {title}
         </h1>

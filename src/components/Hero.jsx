@@ -3,18 +3,20 @@ import RoundButton from "./RoundButton";
 function Hero() {
   return (
     <>
-      <div className="flex items-center flex-col justify-center sm:h-[100dvh] h-[calc(100dvh-135px)]">
-        <div className=" sm:mb-0 mb-[135px] xs:text-[1rem] text-md px-4 xs:tracking-[5px] sm:px-8">
-          <p className="xs:text-[8rem] text-4xl font-[300] mb-6 text-neutral-900 xs:font-[800]">
+      <div className="relative flex items-center flex-col justify-center lg:h-[720px] md:h-[550px] sm:h-[470px] h-[320px]">
+        <div className="sm:mb-0 mb-[135px] px-4 xs:tracking-[5px] sm:px-8">
+          <p className="title text-4xl font-[300] sm:mb-6 -mb-2 text-teal-800 md:text-[7rem] sm:text-[6rem] text-[3.5rem]">
             Farzana
           </p>
-          <div className="flex items-start space-x-2 justify-between font-[500] uppercase text-neutral-900 my-4">
-            <div className="mt-2 h-[1.5px] bg-neutral-900 w-full"></div>
-            <p className="whitespace-nowrap">Web Developer</p>
-            <div className="mt-2 h-[1.5px] bg-neutral-900 w-full"></div>
+          <div className="flex items-start space-x-2 justify-between font-[500] uppercase text-neutral-700 my-4">
+            <div className="mt-2 h-[1.5px] bg-neutral-700 w-full"></div>
+            <p className="whitespace-nowrap text-xs  md:text-xl">
+              Web Developer
+            </p>
+            <div className="mt-2 h-[1.5px] bg-neutral-700 w-full"></div>
           </div>
         </div>
-        <div className="top-[32rem] absolute flex items-center justify-center">
+        <div className="lg:bottom-24 md:bottom-20 bottom-14 absolute flex items-center justify-center">
           <a
             href="./Resume of FARZANA 2024.pdf"
             download

@@ -6,31 +6,51 @@ const hoverStyle =
   "relative after:absolute after:h-[1.5px] after:bottom-0 after:w-0 hover:after:w-full after:left-0 hover:after:right-0 after:bg-neutral-900 after:translate-all after:duration-500";
 
 function NavMenu() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [iconIsVisible, setIconIsVisible] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    if (windowWidth < 1000) {
+      setIconIsVisible(true);
+    } else {
+      setIconIsVisible(false);
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [windowWidth]);
 
   useEffect(() => {
     const listenToScroll = () => {
-      let heightToHideFrom = 600;
+      let heightToHideFrom = 150;
       const winScroll =
         document.body.scrollTop || document.documentElement.scrollTop;
 
-      if (winScroll > heightToHideFrom) {
-        isVisible && setIsVisible(false);
+      if (windowWidth < 1000) {
+        setIconIsVisible(true);
+      } else if (windowWidth > 999 && winScroll > heightToHideFrom) {
+        !iconIsVisible && setIconIsVisible(true);
       } else {
-        setIsVisible(true);
+        setIconIsVisible(false);
       }
     };
 
     window.addEventListener("scroll", listenToScroll);
     return () => window.removeEventListener("scroll", listenToScroll);
-  }, [isVisible]);
+  }, [iconIsVisible, windowWidth]);
 
   return (
     <>
-      {!isVisible ? (
+      {iconIsVisible ? (
         <MenuIcon />
       ) : (
-        <ul className="me-52 lg:flex hidden justify-end text-sm font-[600] space-x-3">
+        <ul className="me-52 flex justify-end text-sm font-[600] space-x-3">
           <li>
             <NavLink to="/projects" className={hoverStyle}>
               Projects

@@ -1,10 +1,8 @@
-import Contact from "../components/Contact";
 import Intro from "../components/Intro";
 import Skills from "../components/Skills";
 import Works from "../components/Works";
-import Footer from "../components/Footer";
-import Profile from "../components/Profile";
 import Background from "../components/Background";
+import About from "../components/About";
 
 function Homepage() {
   return (
@@ -13,9 +11,7 @@ function Homepage() {
         <Intro />
         <Works />
         <Skills />
-        <Profile />
-        <Contact />
-        <Footer />
+        <About />
       </Background>
     </>
   );
