@@ -10,12 +10,12 @@ const hoverStyle =
 
 function Contact() {
   return (
-    <section className="flex items-center justify-between md:px-36 lg:px-40 sm:px-24 xs:px-10 px-4  m-auto py-12 h-fit bg-neutral-900">
+    <section className="flex items-center justify-between md:px-20 lg:px-40 sm:px-12 px-6  m-auto py-12 h-fit bg-neutral-900">
       <div className="text-neutral-100">
         <h1 className="xs:text-xl text-lg text-neutral-100 mb-6 ">
           Hit me up!👇🏻
         </h1>
-        <div className="flex items-center justify-start">
+        <div className="flex items-center justify-start ">
           <Link to="mailto:farzanabdulkhader@gmail.com">
             <div className="text-neutral-900 xs:w-10 xs:h-10 xs:text-2xl text-xl w-8 h-8 rounded-full inline-flex items-center justify-center bg-slate-100">
               <MdEmail />
@@ -32,7 +32,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between space-x-12">
+      <div className="sm:flex-row flex-col flex items-center justify-between sm:space-y-0 space-y-8 md:space-x-12 sm:space-x-6">
         <a
           href="./Resume of FARZANA 2024.pdf"
           download
