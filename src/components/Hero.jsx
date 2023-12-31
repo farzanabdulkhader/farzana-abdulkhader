@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <>
-      <div className="relative flex items-center flex-col justify-center h-screen">
+      <div className="relative flex items-center flex-col justify-center h-[100dvh]">
         <div className="px-4 xs:tracking-[6px] sm:px-8 text-center">
           <p className="title -mb-6 uppercase sm:font-[200] font-[300] lg:font-[100] text-neutral-900 md:text-[7rem] sm:text-[6rem] text-[5rem]">
             Farzana
