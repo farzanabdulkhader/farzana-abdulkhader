@@ -1,13 +1,26 @@
 function Hero() {
   return (
     <>
-      <div className="relative flex items-center flex-col justify-center h-[100dvh]">
-        <div className="px-4 xs:tracking-[6px] sm:px-8 text-center">
-          <p className="title -mb-6 uppercase sm:font-[200] font-[300] lg:font-[100] text-neutral-900 md:text-[7rem] sm:text-[6rem] text-[5rem]">
-            Farzana
-          </p>
-          <div className="flex items-start space-x-2 justify-between font-[500] uppercase text-teal-900">
-            <p className=" text-xl">Frontend Web Developer | React JS</p>
+      <div className="relative flex items-center flex-col justify-center h-screen">
+        <div className="flex md:flex-row flex-col md:items-end items-center justify-between md:gap-12 gap-32">
+          <div>
+            <img src="hero.png" className="h-72" />
+          </div>
+          <div
+            className="px-4 xs:tracking-[8px] sm:px-8 
+        text-left"
+          >
+            <p className=" -ms-2 text-4xl font-[300]  mb-8 text-[#ff914d]  md:text-[6rem] sm:text-[6rem] text-[3.5rem]">
+              Hello!
+            </p>
+            <div className="flex items-start xs:tracking-[4px] space-x-2 justify-between font-[600] text-neutral-900 uppercase">
+              <p className="whitespace-nowrap text-sm md:text-2xl">
+                I&apos;m <span className="text-[#ff914d]">Farzana</span>,
+                <br></br> a Frontend developer
+                {/* <img src="girl.png" className="h-14 mb-[1px] inline" /> */}
+                <br></br> based in Kerala, India
+              </p>
+            </div>
           </div>
         </div>
       </div>

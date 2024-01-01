@@ -50,7 +50,7 @@ function NavMenu() {
       {iconIsVisible ? (
         <MenuIcon />
       ) : (
-        <ul className="me-52 flex justify-end text-sm font-[600] space-x-3">
+        <ul className="me-52 flex  justify-end text-xs uppercase tracking-wider font-[600] space-x-5">
           <li>
             <NavLink to="/projects" className={hoverStyle}>
               Projects

@@ -48,13 +48,15 @@ body {
   height: 100%;
   overflow-x: hidden;
   /* background: url("bg.jpg"); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom right,
     #00ffdd58,
     #49ffe758,
     #fe544158,
     #ff190058
-  );
+  ); */
+
+  background: linear-gradient(to bottom right, #fafafa, #ffffff);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -77,13 +79,13 @@ body {
   width: 100%;
   height: 100%;
   z-index: -100;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom right,
     #00ffdd,
     #49ffe7,
     #fe5441,
     #ff1900
-  );
+  ); */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

@@ -6,7 +6,7 @@ const hoverStyle =
 function Dropdown() {
   return (
     <div>
-      <ul className="flex flex-col items-center justify-center gap-1 text-[11px] md:text-xs md:leading-8 leading-6 font-[600]">
+      <ul className=" text-xs uppercase tracking-wide flex flex-col items-center justify-center gap-1 text-[11px] md:text-xs md:leading-8 leading-6 font-[600]">
         <li>
           <NavLink to="/projects" className={hoverStyle}>
             Projects
