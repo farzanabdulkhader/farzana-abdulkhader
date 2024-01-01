@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "./MenuIcon";
 
 const hoverStyle =
@@ -50,23 +50,21 @@ function NavMenu() {
       {iconIsVisible ? (
         <MenuIcon />
       ) : (
-        <ul className="me-52 flex  justify-end text-xs uppercase tracking-wider font-[600] space-x-5">
+        <ul className="me-52 flex  justify-end text-sm uppercase tracking-wider font-[500] space-x-8">
           <li>
-            <NavLink to="/projects" className={hoverStyle}>
-              Projects
+            <NavLink to="/  " className={hoverStyle}>
+              Home
             </NavLink>
           </li>
-          <li>/</li>
           <li className="whitespace-nowrap">
-            <NavLink to="/about" className={hoverStyle}>
-              About Me
+            <NavLink to="/projects" className={hoverStyle}>
+              Works
             </NavLink>
           </li>
-          <li>/</li>
           <li>
-            <NavLink to="/contact" className={hoverStyle}>
-              Contact
-            </NavLink>
+            <a href="#about" className={hoverStyle}>
+              About
+            </a>
           </li>
         </ul>
       )}

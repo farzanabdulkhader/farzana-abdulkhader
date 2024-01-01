@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;400&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,21 +15,16 @@
 }
 
 :root {
-  --neutral-900: #171717;
-  --light: #fafafa;
-  --teal-950: #042f2e;
-  --teal-900: #134e4a;
-  --teal-800: #115e59;
-  --amber-950: #451a03;
-  --amber-800: #92400e;
-  --bg-green: #89a28f;
-  --bg-red: #dc806b;
-  --bg-yellow: #eb9f63;
-  --bg-light: #d5d6d1;
-  --bg-grape: #c27273;
+  --dark: #171717;
+  --orange: #ff914d;
+  --gray: #262626;
+  --ash: #aaaaaa;
+  --light: #f5f5f5;
 }
 
-* {
+*,
+*::afetr,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,81 +37,10 @@ body {
   min-height: 100dvh;
   height: 100%;
   overflow-x: hidden;
-  /* background: url("bg.jpg"); */
-  /* background: linear-gradient(
-    to bottom right,
-    #00ffdd58,
-    #49ffe758,
-    #fe544158,
-    #ff190058
-  ); */
-
-  background: linear-gradient(to bottom right, #fafafa, #ffffff);
+  background-color: #f5f5f5;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-}
-
-.overlay2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.overlay1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100;
-  /* background: linear-gradient(
-    to bottom right,
-    #00ffdd,
-    #49ffe7,
-    #fe5441,
-    #ff1900
-  ); */
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-.background-image {
-  position: absolute;
-  z-index: -20;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-image: url("/bg/bg.jpg"); */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  opacity: 0.3;
-}
-
-.title {
-  /* font-family: "Ultra", serif; */
-  font-family: "Exo 2", sans-serif;
-}
-
-.pattern {
-  position: absolute;
-  z-index: -20;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-image: url("/bg/bg-pattern.jpg"); */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  opacity: 0.2;
 }
 
 .rotate {

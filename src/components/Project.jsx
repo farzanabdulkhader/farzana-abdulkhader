@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 import Tooltip from "./Tooltip";
 
 const colorVariants = {
-  peach: "bg-peachy border-peachy before:bg-peachy",
-  green: "bg-greeny border-greeny before:bg-greeny",
-  grape: "bg-grapey border-grapey before:bg-grapey",
-  orange: "bg-orangey border-orangey before:bg-orangey",
-  teal: "bg-teal-300 before:bg-teal-300 border-teal-300 text-neutral-100",
-  dark: "bg-fuchsia-600 before:bg-fuchsia-600 border-fuchsia-600",
+  orange: "bg-orange border-orange before:bg-orange text-dark",
+  ash: "bg-ash border-ash before:bg-ash text-dark",
+  gray: "bg-gray before:bg-gray border-gray text-dark",
+  dark: "bg-dark before:bg-dark border-dark",
 };
 
 function Project({ project }) {

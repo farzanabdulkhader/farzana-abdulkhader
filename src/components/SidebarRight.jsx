@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import NavMenu from "./NavMenu";
 
 const hoverStyle =
-  "hover:scale-105 hover:text-neutral-950 transition-all duration-100";
+  "hover:scale-110 hover:text-gray transition-all duration-100";
 
 function SidebarRight() {
   return (
     <div className="sm:fixed absolute flex-col flex items-center justify-between w-20 me-4 sm:py-10  py-12 h-screen top-0 right-0 bottom-0">
       <NavMenu />
 
-      <div className="flex flex-col text-2xl items-center justify-between space-y-4">
+      <div className="flex flex-col text-xl text-dark items-center justify-between space-y-4">
         <Link
           to="https://github.com/farzanabdulkhader"
           target="_blank"

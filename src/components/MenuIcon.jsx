@@ -53,7 +53,7 @@ function MenuIcon() {
           {isComponentVisible && isVisibleDropdown && (
             <div
               ref={ref}
-              className="absolute mt-1 -md:left-2 -left-4 border md:border-2  border-neutral-900 bg-neutral-300/30 p-2 cursor-pointer flex flex-col items-end justify-end"
+              className="absolute mt-1 -md:left-2 -left-4  p-2 cursor-pointer flex flex-col items-end justify-end"
             >
               <Dropdown />
             </div>

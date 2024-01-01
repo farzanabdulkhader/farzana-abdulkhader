@@ -10,14 +10,13 @@ function Hero() {
             className="px-4 xs:tracking-[8px] sm:px-8 
         text-left"
           >
-            <p className=" -ms-2 text-4xl font-[300]  mb-8 text-[#ff914d]  md:text-[6rem] sm:text-[6rem] text-[3.5rem]">
+            <p className=" -ms-2 text-4xl font-[300]  mb-8 text-orange  md:text-[6rem] sm:text-[6rem] text-[3.5rem]">
               Hello!
             </p>
             <div className="flex items-start xs:tracking-[4px] space-x-2 justify-between font-[600] text-neutral-900 uppercase">
               <p className="whitespace-nowrap text-sm md:text-2xl">
                 I&apos;m <span className="text-[#ff914d]">Farzana</span>,
                 <br></br> a Frontend developer
-                {/* <img src="girl.png" className="h-14 mb-[1px] inline" /> */}
                 <br></br> based in Kerala, India
               </p>
             </div>

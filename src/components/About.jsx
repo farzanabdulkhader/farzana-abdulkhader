@@ -4,7 +4,7 @@ import Contact from "../components/Contact";
 
 function About() {
   return (
-    <div className="relative">
+    <div className="relative" id="about">
       <Profile />
       <Contact />
       <Footer />
