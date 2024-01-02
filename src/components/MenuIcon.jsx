@@ -42,18 +42,18 @@ function MenuIcon() {
     <>
       {!isOpenMenu || !isComponentVisible ? (
         <div
-          className="cursor-pointer text-[26px] hover:scale-105 hover:text-neutral-950 transition-all duration-100"
+          className="relative cursor-pointer text-[26px] hover:scale-105 hover:text-neutral-950 transition-all duration-100"
           onClick={openMenu}
         >
           <CgMenuGridO />
         </div>
       ) : (
-        <div className="relative cursor-pointer text-2xl " onClick={closeMenu}>
+        <div className="cursor-pointer text-2xl " onClick={closeMenu}>
           <IoMdArrowDropdown />
           {isComponentVisible && isVisibleDropdown && (
             <div
               ref={ref}
-              className="absolute mt-1 -md:left-2 -left-4  p-2 cursor-pointer flex flex-col items-end justify-end"
+              className="absolute text-dark tracking-wider -left-[30%] b-0 w-20 cursor-pointer flex flex-col items-end justify-end"
             >
               <Dropdown />
             </div>

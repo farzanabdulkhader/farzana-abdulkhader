@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 import Tooltip from "./Tooltip";
 
 const colorVariants = {
-  orange: "bg-orange border-orange before:bg-orange text-dark",
-  ash: "bg-ash border-ash before:bg-ash text-dark",
-  gray: "bg-gray before:bg-gray border-gray text-dark",
-  dark: "bg-dark before:bg-dark border-dark",
+  kidzin: "bg-kidzin border-kidzin before:bg-kidzin text-dark",
+  weatherly: "bg-weatherly border-weatherly before:bg-weatherly text-dark",
+  notever: "bg-notever before:bg-notever border-notever text-dark",
+  fairshare: "bg-fairshare before:bg-fairshare border-fairshare",
 };
 
 function Project({ project }) {
   const { title, skills, shade, image, video, gitLink, liveLink } = project;
   return (
     <div
-      className={`h-fit relative p-3 pb-14 w-full mb-2 before:absolute before:h-full before:left-0 before:right-full before:top-0 before:bottom-0 before:${colorVariants[shade]} before:z-[-1] z-0 before:translate-all before:duration-1000 hover:before:right-0`}
+      className={`h-fit relative p-2 pb-14 w-full before:absolute before:h-full before:left-0 before:right-full before:top-0 before:bottom-0 before:${colorVariants[shade]} before:z-[-1] z-0 before:translate-all before:duration-1000 hover:before:right-0`}
     >
       <div
         className={`${colorVariants[shade]} h-fit w-full border-2 overflow-hidden`}
@@ -49,14 +49,14 @@ function Project({ project }) {
           </span>
         </Tooltip>
         <Tooltip text="View code">
-          <span className="p-1  text-neutral-100 hover:scale-110 transition ease-in-out duration-300">
+          <span className="p-1 text-neutral-100 hover:scale-110 transition ease-in-out duration-300">
             <Link to={gitLink} target="_blank">
               <PiGithubLogo />
             </Link>
           </span>
         </Tooltip>
       </div>
-      <div className="text-right absolute text-neutral-100 -right-1 bottom-0 p-4">
+      <div className="text-right absolute text-neutral-100 right-2 bottom-2">
         <h1
           className={`${colorVariants[shade]} cursor-pointer font-[600] text-lg p-2 rounded-sm`}
         >

@@ -3,7 +3,7 @@
   width: 100vw;
   position: fixed;
   z-index: -300;
-  opacity: 0.1;
+  opacity: 0.05;
 }
 
 .circle {

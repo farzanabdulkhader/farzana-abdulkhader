@@ -1,22 +1,31 @@
+// const testStyle =
+//   "xl:bg-blue-200 lg:bg-pink-200 md:bg-green-200 -z-50 sm:bg-yellow-200 xs:bg-blue-200 bg-red-200"; // {`${testStyle}`}
+
+import RippleBg from "./RippleBg";
+
 function Hero() {
   return (
     <>
-      <div className="relative flex items-center flex-col justify-center h-screen">
-        <div className="flex md:flex-row flex-col md:items-end items-center justify-between md:gap-12 gap-32">
+      <div
+        className={`relative flex items-center flex-col justify-center h-[690px]`}
+      >
+        <div className="flex md:flex-row flex-col tracking-widest md:items-end items-center justify-between lg:gap-32 md:max-lg:gap-8 sm:gap-14 gap-8">
           <div>
-            <img src="hero.png" className="h-72" />
+            <img
+              src="hero.png"
+              className="md:h-80 lg:h-80 sm:h-96 xs:h-96 h-60 object-contain"
+            />
           </div>
-          <div
-            className="px-4 xs:tracking-[8px] sm:px-8 
-        text-left"
-          >
-            <p className=" -ms-2 text-4xl font-[300]  mb-8 text-orange  md:text-[6rem] sm:text-[6rem] text-[3.5rem]">
+
+          <div className="relative xs:tracking-3 text-left lg:scale-125 md:scale-100 sm:scale-125">
+            <RippleBg />
+            <p className="font-[300] -ml-1 text-orange md:text-[6rem] sm:text-6xl text-6xl">
               Hello!
             </p>
-            <div className="flex items-start xs:tracking-[4px] space-x-2 justify-between font-[600] text-neutral-900 uppercase">
-              <p className="whitespace-nowrap text-sm md:text-2xl">
-                I&apos;m <span className="text-[#ff914d]">Farzana</span>,
-                <br></br> a Frontend developer
+            <div className="flex items-start justify-between font-[600] text-neutral-900 text-xl uppercase">
+              <p className="whitespace-nowrap">
+                I&apos;m <span className="text-orange">Farzana</span>,<br></br>a
+                Frontend developer
                 <br></br> based in Kerala, India
               </p>
             </div>

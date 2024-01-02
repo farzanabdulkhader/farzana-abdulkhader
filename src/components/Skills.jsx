@@ -13,19 +13,24 @@ import { RiBootstrapLine } from "react-icons/ri";
 import { SiStyledcomponents } from "react-icons/si";
 import { SiReacthookform } from "react-icons/si";
 
+const testStyle =
+  "xl:bg-blue-200 lg:bg-pink-200 md:bg-green-200 -z-50 sm:bg-yellow-200 xs:bg-blue-200 bg-red-200"; // {`${testStyle}`}
+
 const skillDivStyle =
-  "flex items-center justify-between xs:gap-2 gap-1 whitespace-nowrap flex-col p-2";
+  "flex items-center justify-between xs:gap-2 gap-0 text-[2.8rem] sm:text-4xl whitespace-nowrap flex-col p-2";
 
 const skillTextStyle = "sm:text-[12px] text-[10px] font-[600]";
 
 function Skills() {
   return (
-    <section className="md:px-36 lg:px-40 sm:px-24 px-4 py-12 h-fit flex items-center justify-center lg:mb-8">
+    <section
+      className={` md:px-30 lg:px-40 sm:px-24 px-4 py-12 h-fit flex items-center justify-center lg:mb-8`}
+    >
       <div className="skills border-2 border-neutral-900 relative w-full h-full bg-neutral-300/30 py-12 px-6 md:px-12">
         <h1 className="text-xl underline underline-offset-4 text-neutral-900 font-[700] uppercase tracking-wider mb-8">
           My Toolkit
         </h1>
-        <div className="grid grid-flow-row xs:gap-10 gap-2 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 grid-cols-2 md:text-5xl text-4xl text-neutral-900">
+        <div className="grid grid-flow-row xs:gap-8 gap-2 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-3 grid-cols-2 md:text-5xl text-4xl text-neutral-900">
           <div className={`${skillDivStyle}`}>
             <div className="rotate">
               <FaReact />

@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "./MenuIcon";
 
 const hoverStyle =
-  "relative after:absolute after:h-[1.5px] after:bottom-0 after:w-0 hover:after:w-full after:left-0 hover:after:right-0 after:bg-neutral-900 after:translate-all after:duration-500";
+  "relative after:absolute after:h-[1.5px] after:bottom-0 after:w-0 hover:after:w-full after:left-0 hover:after:right-0 after:bg-orange after:translate-all after:duration-500";
 
 function NavMenu() {
   const [iconIsVisible, setIconIsVisible] = useState(false);
@@ -50,9 +50,9 @@ function NavMenu() {
       {iconIsVisible ? (
         <MenuIcon />
       ) : (
-        <ul className="me-52 flex  justify-end text-sm uppercase tracking-wider font-[500] space-x-8">
+        <ul className="me-52 flex justify-end text-sm uppercase tracking-widest font-[500] space-x-8">
           <li>
-            <NavLink to="/  " className={hoverStyle}>
+            <NavLink to="/" className={hoverStyle}>
               Home
             </NavLink>
           </li>

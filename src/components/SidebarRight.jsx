@@ -9,10 +9,10 @@ const hoverStyle =
 
 function SidebarRight() {
   return (
-    <div className="sm:fixed absolute flex-col flex items-center justify-between w-20 me-4 sm:py-10  py-12 h-screen top-0 right-0 bottom-0">
+    <div className="sm:fixed absolute flex-col flex items-center justify-between w-20 sm:py-10  py-12 h-screen top-0 right-0 bottom-0">
       <NavMenu />
 
-      <div className="flex flex-col text-xl text-dark items-center justify-between space-y-4">
+      <div className="xs:flex hidden md:self-center self-end md:ml-0 me-3 flex-col text-xl text-dark items-center justify-between space-y-4">
         <Link
           to="https://github.com/farzanabdulkhader"
           target="_blank"

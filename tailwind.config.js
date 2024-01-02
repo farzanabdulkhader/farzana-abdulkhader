@@ -11,7 +11,12 @@ export default {
         orange: "#ff914d",
         gray: "#262626",
         ash: "#aaaaaa",
-        light: "#f5f5f5",
+        light: "#fafafa",
+
+        kidzin: "#EC625F",
+        weatherly: "#ff914d",
+        notever: "#B649BA",
+        fairshare: "#EC625F",
       },
     },
   },

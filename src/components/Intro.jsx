@@ -5,8 +5,8 @@ import SidebarRight from "./SidebarRight";
 function Intro() {
   return (
     <>
-      <SidebarLeft />
       <Hero />
+      <SidebarLeft />
       <SidebarRight />
     </>
   );
