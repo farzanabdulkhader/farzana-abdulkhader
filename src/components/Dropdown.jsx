@@ -8,19 +8,19 @@ function Dropdown() {
     <div>
       <ul className="text-xs uppercase tracking-wider flex flex-col items-center justify-center gap-1 text-[11px] md:text-sm md:leading-8 leading-6 font-[600]">
         <li>
-          <NavLink to="/projects" className={hoverStyle}>
+          <a href="#top" className={hoverStyle}>
             HOME
-          </NavLink>
+          </a>
         </li>
         <li className="whitespace-nowrap">
-          <NavLink to="/" className={hoverStyle}>
+          <NavLink to="/projects" className={hoverStyle}>
             WORKS
           </NavLink>
         </li>
         <li>
-          <NavLink to="/" className={hoverStyle}>
+          <a href="#about" className={hoverStyle}>
             ABOUT
-          </NavLink>
+          </a>
         </li>
       </ul>
     </div>

@@ -1,12 +1,14 @@
-import Intro from "../components/Intro";
 import Skills from "../components/Skills";
 import Works from "../components/Works";
 import About from "../components/About";
+import Sidebars from "../components/Sidebars";
+import Hero from "../components/Hero";
 
 function Homepage() {
   return (
     <>
-      <Intro />
+      <Hero />
+      <Sidebars />
       <Works />
       <Skills />
       <About />

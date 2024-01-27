@@ -7,6 +7,7 @@ function Hero() {
   return (
     <>
       <div
+        id="top"
         className={`relative flex items-center flex-col justify-center h-[690px]`}
       >
         <div className="flex md:flex-row flex-col tracking-widest md:items-end items-center justify-between lg:gap-32 md:max-lg:gap-8 sm:gap-14 gap-8">

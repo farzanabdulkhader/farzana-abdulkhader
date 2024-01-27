@@ -21,7 +21,7 @@ function Works() {
               <Project project={project} key={project.id} />
             ))}
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end mt-4">
             <Link to="/projects">
               <RoundButton color="dark">View all projects</RoundButton>
             </Link>

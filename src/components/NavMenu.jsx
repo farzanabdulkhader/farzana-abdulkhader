@@ -52,9 +52,9 @@ function NavMenu() {
       ) : (
         <ul className="me-52 flex justify-end text-sm uppercase tracking-widest font-[500] space-x-8">
           <li>
-            <NavLink to="/" className={hoverStyle}>
+            <a href="#top" className={hoverStyle}>
               Home
-            </NavLink>
+            </a>
           </li>
           <li className="whitespace-nowrap">
             <NavLink to="/projects" className={hoverStyle}>
