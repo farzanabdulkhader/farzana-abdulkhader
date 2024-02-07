@@ -20,7 +20,7 @@ function Hero() {
 
           <div className="relative xs:tracking-3 text-left lg:scale-125 md:scale-100 sm:scale-125">
             <RippleBg />
-            <p className="font-[300] -ml-1 text-orange md:text-[6rem] sm:text-6xl text-6xl">
+            <p className="font-[300] -ml-1 text-orange md:text-[5rem] sm:text-6xl text-6xl">
               Hello!
             </p>
             <div className="flex items-start justify-between font-[600] text-neutral-900 text-xl uppercase">
