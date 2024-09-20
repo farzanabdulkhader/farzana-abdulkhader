@@ -26,8 +26,8 @@ function Hero() {
             <div className="flex items-start justify-between font-[600] text-neutral-900 text-xl uppercase">
               <p className="whitespace-nowrap">
                 I&apos;m <span className="text-orange">Farzana</span>,<br></br>a
-                Frontend developer
-                <br></br> based in Kerala, India
+                Full-stack Web developer
+                <br></br> based in Dubai, UAE
               </p>
             </div>
           </div>

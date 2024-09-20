@@ -7,7 +7,9 @@ const colorVariants = {
   kidzin: "bg-kidzin border-kidzin before:bg-kidzin text-dark",
   weatherly: "bg-weatherly border-weatherly before:bg-weatherly text-dark",
   notever: "bg-notever before:bg-notever border-notever text-dark",
-  fairshare: "bg-fairshare before:bg-fairshare border-fairshare",
+  fairshare: "bg-fairshare before:bg-fairshare border-fairshare text-dark",
+  wandershare:
+    "bg-wandershare before:bg-wandershare border-wandershare text-dark",
 };
 
 function Project({ project }) {
@@ -56,13 +58,14 @@ function Project({ project }) {
           </span>
         </Tooltip>
       </div>
-      <div className="text-right absolute text-neutral-100 right-2 bottom-2">
+      <div className="text-right flex flex-col items-end absolute text-neutral-100 right-2 bottom-2">
         <h1
-          className={`${colorVariants[shade]} cursor-pointer font-[600] text-lg p-2 rounded-sm`}
+          className={`${colorVariants[shade]} cursor-pointer font-[600] text-lg p-2 rounded-sm inline`}
         >
           {title}
         </h1>
-        <p className={`${colorVariants[shade]} inline p-2 rounded-sm`}>
+        <p className={`${colorVariants[shade]} p-3 rounded-sm block`}>
+          {/* <p className="border-red-500 border-2 p-2 rounded-sm block"> */}
           {skills.join(" | ")}
         </p>
       </div>

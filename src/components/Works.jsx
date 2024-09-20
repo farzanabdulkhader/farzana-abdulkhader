@@ -10,7 +10,7 @@ function Works() {
   return (
     <>
       <section
-        className={`px-2 sm:max-lg:py-20 xs:px-8 sm:max-lg:px-[5rem] lg:px-28 py-12 md:py-4 h-fit items-center justify-center`}
+        className={`px-2 sm:max-lg:py-20 xs:px-8 sm:max-lg:px-[5rem] lg:px-28 py-12 md:py-4 h-fit items-center justify-center mb-[8rem]`}
       >
         <div>
           <h1 className="text-2xl underline underline-offset-4 text-neutral-900 font-[700] uppercase tracking-wider mb-8">

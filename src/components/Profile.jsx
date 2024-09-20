@@ -16,15 +16,17 @@ function Profile() {
             About Me
           </h1>
           <p className="sm:text-md text-sm font-[300] leading-6 tracking-wide text-neutral-100">
-            As a Junior Front-End Developer, I excel in crafting responsive
-            websites using HTML, CSS, JavaScript, React, and Tailwind. I am a
-            dedicated web developer with a passion for continuous learning and
-            skill development. Proficient in various languages, frameworks, and
-            tools, I have demonstrated practical application of my skills in
-            both personal and freelance projects. As I aspire to become a
-            full-stack developer, my current focus is on mastering the MERN
-            stack. I am committed to staying updated with the latest web
-            technologies to enhance my effectiveness as a developer each day.
+            I am a Full Stack Developer skilled in building responsive web
+            applications using the MERN stack (MongoDB, Express.js, React, and
+            Node.js). Starting with front-end technologies like HTML, CSS,
+            JavaScript, React, and Tailwind, I’ve expanded my skills to include
+            back-end development and database management. I’ve applied these
+            skills in various personal and freelance projects, creating both
+            user-friendly interfaces and efficient server-side applications. I’m
+            passionate about learning and staying updated with the latest web
+            technologies to continuously improve as a developer. My current
+            focus is on mastering full-stack development and using my skills to
+            create effective web solutions.
           </p>
         </div>
       </section>

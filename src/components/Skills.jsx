@@ -12,6 +12,9 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 import { RiBootstrapLine } from "react-icons/ri";
 import { SiStyledcomponents } from "react-icons/si";
 import { SiReacthookform } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io5";
+import { BiLogoMongodb } from "react-icons/bi";
+import { SiExpress } from "react-icons/si";
 
 const testStyle =
   "xl:bg-blue-200 lg:bg-pink-200 md:bg-green-200 -z-50 sm:bg-yellow-200 xs:bg-blue-200 bg-red-200"; // {`${testStyle}`}
@@ -88,6 +91,18 @@ function Skills() {
           <div className={skillDivStyle}>
             <RiSupabaseLine />
             <span className={skillTextStyle}>Supabase</span>
+          </div>
+          <div className={skillDivStyle}>
+            <IoLogoNodejs />
+            <span className={skillTextStyle}>Node JS</span>
+          </div>
+          <div className={skillDivStyle}>
+            <BiLogoMongodb />
+            <span className={skillTextStyle}>MongoDB</span>
+          </div>
+          <div className={skillDivStyle}>
+            <SiExpress />
+            <span className={skillTextStyle}>Express JS</span>
           </div>
         </div>
       </div>

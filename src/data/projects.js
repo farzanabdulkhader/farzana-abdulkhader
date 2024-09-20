@@ -35,6 +35,15 @@ const projects = [
     gitLink: "https://github.com/farzanabdulkhader/FairShare",
     liveLink: "https://the-fair-share.vercel.app/",
   },
+  {
+    id: 5,
+    title: "WanderShare Web App",
+    skills: ["React JS", "Node JS", "Express JS", "MongoDB", "Cloudinary"],
+    image: "wandershare-bg-image.png",
+    shade: "wandershare",
+    gitLink: "https://github.com/farzanabdulkhader/WanderShare",
+    liveLink: "https://wander-share.vercel.app/",
+  },
 ];
 
 export default projects;

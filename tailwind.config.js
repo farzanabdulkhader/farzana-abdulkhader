@@ -17,6 +17,7 @@ export default {
         weatherly: "#ff914d",
         notever: "#B649BA",
         fairshare: "#EC625F",
+        wandershare: "#fe6722",
       },
     },
   },
