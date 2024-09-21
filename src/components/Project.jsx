@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { GoLinkExternal } from "react-icons/go";
 import { PiGithubLogo } from "react-icons/pi";
 import { Link } from "react-router-dom";
@@ -8,15 +9,40 @@ const colorVariants = {
   weatherly: "bg-weatherly border-weatherly before:bg-weatherly text-dark",
   notever: "bg-notever before:bg-notever border-notever text-dark",
   fairshare: "bg-fairshare before:bg-fairshare border-fairshare text-dark",
-  wandershare:
-    "bg-wandershare before:bg-wandershare border-wandershare text-dark",
+  wandershare: "bg-wandershare before:bg-wandershare border-wandershare ",
 };
 
 function Project({ project }) {
   const { title, skills, shade, image, video, gitLink, liveLink } = project;
+  const [isVisible, setIsVisible] = useState(false);
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (projectRef.current) {
+      observer.observe(projectRef.current);
+    }
+
+    return () => {
+      if (projectRef.current) {
+        observer.unobserve(projectRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div
-      className={`h-fit relative p-2 pb-14 w-full before:absolute before:h-full before:left-0 before:right-full before:top-0 before:bottom-0 before:${colorVariants[shade]} before:z-[-1] z-0 before:translate-all before:duration-1000 hover:before:right-0`}
+      ref={projectRef}
+      className={`h-fit relative p-2 pb-14 w-full before:absolute before:h-full before:left-0 before:right-full before:top-0 before:bottom-0 
+        before:${colorVariants[shade]} before:z-[-1] z-0 
+        ${isVisible ? "before:right-0" : "before:right-full"} 
+        before:translate-all before:duration-1000`}
     >
       <div
         className={`${colorVariants[shade]} h-fit w-full border-2 overflow-hidden`}
@@ -65,7 +91,6 @@ function Project({ project }) {
           {title}
         </h1>
         <p className={`${colorVariants[shade]} p-3 rounded-sm block`}>
-          {/* <p className="border-red-500 border-2 p-2 rounded-sm block"> */}
           {skills.join(" | ")}
         </p>
       </div>
