@@ -2,6 +2,7 @@ import Project from "../components/Project";
 import Sidebars from "../components/Sidebars";
 import RoundButton from "../components/RoundButton";
 import projects from "../data/projects";
+import ProjectEdit from "../components/ProjectEdit";
 
 function Projects() {
   return (
@@ -16,7 +17,7 @@ function Projects() {
           </h1>
           <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-8 gap-4">
             {projects.map((project) => (
-              <Project project={project} key={project.id} />
+              <ProjectEdit project={project} key={project.id} />
             ))}
           </div>
         </div>
