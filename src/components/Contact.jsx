@@ -1,9 +1,9 @@
-import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 import RoundButton from "./RoundButton";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedin } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const hoverStyle =
   "hover:scale-105 hover:text-neutral-300 transition-all duration-100";

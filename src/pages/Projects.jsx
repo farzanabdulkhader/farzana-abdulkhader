@@ -11,7 +11,7 @@ function Projects() {
         className={`px-2 md:my-20 my-4 sm:max-lg:py-20 xs:px-8 sm:max-lg:px-[5rem] lg:px-28 py-12 md:py-4 h-fit items-center justify-center`}
       >
         <div>
-          <h1 className="text-4xl text-center underline underline-offset-2 text-neutral-900 font-[700] uppercase tracking-wider mb-20">
+          <h1 className="text-3xl text-center underline-offset-2 text-neutral-900 font-[700] uppercase tracking-wider mb-20">
             My Works
           </h1>
           <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-8 gap-4">

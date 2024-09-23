@@ -25,7 +25,7 @@ const Project = ({ project }) => {
   const checkVisibility = () => {
     if (projectRef.current) {
       const rect = projectRef.current.getBoundingClientRect();
-      const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+      const isInView = rect.top >= 60 && rect.bottom <= window.innerHeight - 60;
       setIsVisible(isInView);
     }
   };

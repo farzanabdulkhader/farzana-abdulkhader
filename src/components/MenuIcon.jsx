@@ -20,7 +20,7 @@ function MenuIcon() {
   const [isVisibleDropdown, setIsVisibleDropdown] = useState(true);
   useEffect(() => {
     const listenToScroll = () => {
-      let heightToHideFrom = 1890;
+      let heightToHideFrom = 2465;
       const winScroll =
         document.body.scrollTop || document.documentElement.scrollTop;
 

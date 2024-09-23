@@ -1,23 +1,18 @@
 import { FaReact } from "react-icons/fa";
 import { BiLogoRedux } from "react-icons/bi";
-import { SiReactrouter } from "react-icons/si";
-import { MdJavascript } from "react-icons/md";
+import { LiaJsSquare } from "react-icons/lia";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { SiReactquery } from "react-icons/si";
-import { DiCss3Full } from "react-icons/di";
+import { GrCss3 } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
-import { LuGithub } from "react-icons/lu";
+import { IoLogoGithub } from "react-icons/io5";
 import { RiSupabaseLine } from "react-icons/ri";
 import { BiLogoTailwindCss } from "react-icons/bi";
-import { RiBootstrapLine } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
-import { SiReacthookform } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io5";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
-
-// const testStyle =
-//   "xl:bg-blue-200 lg:bg-pink-200 md:bg-green-200 -z-50 sm:bg-yellow-200 xs:bg-blue-200 bg-red-200"; // {`${testStyle}`}
 
 const skillDivStyle =
   "flex items-center justify-between xs:gap-2 gap-0 text-[2.8rem] sm:text-4xl whitespace-nowrap flex-col p-2";
@@ -30,7 +25,7 @@ function Skills() {
       className={` md:px-30 lg:px-40 sm:px-24 px-4 py-12 h-fit flex items-center justify-center lg:mb-8`}
     >
       <div className="skills border-2 border-neutral-900 relative w-full h-full bg-neutral-300/30 py-12 px-6 md:px-12">
-        <h1 className="text-xl underline underline-offset-4 text-neutral-900 font-[700] uppercase tracking-wider mb-8">
+        <h1 className="text-xl text-neutral-900 font-[700] uppercase mb-12 tracking-wider">
           My Toolkit
         </h1>
         <div className="grid grid-flow-row xs:gap-8 gap-2 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-3 grid-cols-2 md:text-5xl text-4xl text-neutral-900">
@@ -44,18 +39,12 @@ function Skills() {
             <BiLogoRedux />
             <span className={skillTextStyle}>Redux</span>
           </div>
-          <div className={skillDivStyle}>
-            <SiReactrouter />
-            <span className={skillTextStyle}>React Router</span>
-          </div>
+
           <div className={skillDivStyle}>
             <SiReactquery />
             <span className={skillTextStyle}>React Query</span>
           </div>
-          <div className={skillDivStyle}>
-            <SiReacthookform />
-            <span className={skillTextStyle}>React Hook Form</span>
-          </div>
+
           <div className={skillDivStyle}>
             <BiLogoTailwindCss />
             <span className={skillTextStyle}>Tailwind CSS</span>
@@ -65,19 +54,20 @@ function Skills() {
             <span className={skillTextStyle}>Styled Components</span>
           </div>
           <div className={skillDivStyle}>
+            <LiaJsSquare />
+            <span className={skillTextStyle}>JavaScript</span>
+          </div>
+          <div className={skillDivStyle}>
             <AiOutlineHtml5 />
             <span className={skillTextStyle}>HTML5</span>
           </div>
           <div className={skillDivStyle}>
-            <DiCss3Full />
+            <GrCss3 />
             <span className={skillTextStyle}>CSS3</span>
           </div>
+
           <div className={skillDivStyle}>
-            <MdJavascript />
-            <span className={skillTextStyle}>JavaScript</span>
-          </div>
-          <div className={skillDivStyle}>
-            <RiBootstrapLine />
+            <FaBootstrap />
             <span className={skillTextStyle}>Bootstrap</span>
           </div>
           <div className={skillDivStyle}>
@@ -85,7 +75,7 @@ function Skills() {
             <span className={skillTextStyle}>GIT</span>
           </div>
           <div className={skillDivStyle}>
-            <LuGithub />
+            <IoLogoGithub />
             <span className={skillTextStyle}>GitHub</span>
           </div>
           <div className={skillDivStyle}>
@@ -103,6 +93,10 @@ function Skills() {
           <div className={skillDivStyle}>
             <SiExpress />
             <span className={skillTextStyle}>Express JS</span>
+          </div>
+          <div className={skillDivStyle}>
+            <img src="cloud-api.png" alt="api-icon" className="h-12 w-12" />
+            <span className={skillTextStyle}>RSET API</span>
           </div>
         </div>
       </div>
