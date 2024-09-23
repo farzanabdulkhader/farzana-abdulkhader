@@ -5,7 +5,7 @@ function Tooltip({ text, children, position = "bottom right" }) {
   const coordinates = position.split(" ");
   const locateStyling = {
     left: coordinates.includes("right") ? "0" : "auto",
-    top: coordinates.includes("bottom") ? "100%" : "auto",
+    top: coordinates.includes("bottom") ? "125%" : "auto",
     right: coordinates.includes("left") ? "0" : "auto",
     bottom: coordinates.includes("top") ? "100%" : "auto",
   };

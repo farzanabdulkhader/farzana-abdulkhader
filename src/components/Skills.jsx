@@ -16,8 +16,8 @@ import { IoLogoNodejs } from "react-icons/io5";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
 
-const testStyle =
-  "xl:bg-blue-200 lg:bg-pink-200 md:bg-green-200 -z-50 sm:bg-yellow-200 xs:bg-blue-200 bg-red-200"; // {`${testStyle}`}
+// const testStyle =
+//   "xl:bg-blue-200 lg:bg-pink-200 md:bg-green-200 -z-50 sm:bg-yellow-200 xs:bg-blue-200 bg-red-200"; // {`${testStyle}`}
 
 const skillDivStyle =
   "flex items-center justify-between xs:gap-2 gap-0 text-[2.8rem] sm:text-4xl whitespace-nowrap flex-col p-2";

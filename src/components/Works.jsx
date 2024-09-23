@@ -1,9 +1,6 @@
 import Project from "./Project";
 import projects from "../data/projects";
 
-// const testStyle =
-//   "xl:bg-blue-200 lg:bg-pink-200 md:bg-green-200 -z-50 sm:bg-yellow-200 xs:bg-blue-200 bg-red-200"; // {`${testStyle}`}
-
 function Works() {
   return (
     <>
@@ -19,11 +16,6 @@ function Works() {
               <Project project={project} key={project.id} />
             ))}
           </div>
-          {/* <div className="flex justify-end mt-4">
-            <Link to="/projects">
-              <RoundButton color="dark">View all projects</RoundButton>
-            </Link>
-          </div> */}
         </div>
       </section>
     </>
