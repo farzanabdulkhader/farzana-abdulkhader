@@ -27,7 +27,7 @@ function Hero() {
               <p className="whitespace-nowrap">
                 I&apos;m <span className="text-orange">Farzana</span>,<br></br>a
                 Full-stack Web developer
-                <br></br> based in Dubai, UAE
+                <br></br> based in Kerala, India
               </p>
             </div>
           </div>
