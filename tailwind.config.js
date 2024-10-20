@@ -18,6 +18,7 @@ export default {
         notever: "#B649BA",
         fairshare: "#EC625F",
         wandershare: "#003285",
+        reactquiz: "#0f6292",
       },
     },
   },

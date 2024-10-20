@@ -45,9 +45,17 @@ const projects = [
     gitLink: "https://github.com/farzanabdulkhader/notever.git",
     liveLink: "https://notever.netlify.app",
   },
-
   {
     id: 6,
+    title: "React Quiz",
+    skills: ["React JS, Tailwind CSS, Node JS, Express JS "],
+    image: "react-quiz.png",
+    shade: "reactquiz",
+    liveLink: "",
+    gitLink: "https://github.com/farzanabdulkhader/React-Quiz",
+  },
+  {
+    id: 7,
     title: "Kidzin Startup Website",
     skills: ["HTML", "CSS", "JavaScript"],
     image: "kidzin-bg-image.png",

@@ -10,6 +10,7 @@ const colorVariants = {
   notever: "bg-notever before:bg-notever border-notever text-light",
   fairshare: "bg-fairshare before:bg-fairshare border-fairshare text-dark",
   wandershare: "bg-wandershare before:bg-wandershare border-wandershare",
+  reactquiz: "bg-reactquiz before:bg-reactquiz border-reactquiz",
 };
 
 const Project = ({ project }) => {
