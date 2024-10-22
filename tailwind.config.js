@@ -19,6 +19,7 @@ export default {
         fairshare: "#EC625F",
         wandershare: "#003285",
         reactquiz: "#0f6292",
+        postaquote: "#4D4DB8",
       },
     },
   },

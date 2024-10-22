@@ -11,6 +11,7 @@ const colorVariants = {
   fairshare: "bg-fairshare before:bg-fairshare border-fairshare text-dark",
   wandershare: "bg-wandershare before:bg-wandershare border-wandershare",
   reactquiz: "bg-reactquiz before:bg-reactquiz border-reactquiz",
+  postaquote: "bg-postaquote before:bg-postaquote border-postaquote",
 };
 
 const Project = ({ project }) => {
