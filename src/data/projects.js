@@ -72,6 +72,15 @@ const projects = [
     liveLink: "https://farzanabdulkhader.github.io/kidzin-preschool/",
     gitLink: "https://github.com/farzanabdulkhader/kidzin-preschool.git",
   },
+  {
+    id: 9,
+    title: "Youtube Clone",
+    skills: ["HTML", "CSS"],
+    image: "youtube-clone.png",
+    shade: "youtubeclone",
+    liveLink: "https://farzanabdulkhader.github.io/youtube-clone/",
+    gitLink: "https://github.com/farzanabdulkhader/youtube-clone",
+  },
 ];
 
 export default projects;

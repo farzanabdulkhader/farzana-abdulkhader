@@ -12,6 +12,7 @@ const colorVariants = {
   wandershare: "bg-wandershare before:bg-wandershare border-wandershare",
   reactquiz: "bg-reactquiz before:bg-reactquiz border-reactquiz",
   postaquote: "bg-postaquote before:bg-postaquote border-postaquote",
+  youtubeclone: "bg-youtubeclone before:bg-youtubeclone border-youtubeclone",
 };
 
 const Project = ({ project }) => {
